@@ -41,10 +41,14 @@ sizePizza.forEach((element) => {
   let label = document.createElement("label");
   label.setAttribute("class", "label-circle");
   let input = document.createElement("input");
+  input.addEventListener("click", () => {
+    label.classList.toggle("active-checked")
+  })
   label.htmlFor = element;
-  input.type = "checkbox";
+  input.type = "radio";
   input.id = element;
   input.value = element;
+  console.log(input)
   input.setAttribute("class", "input-sizes");
   label.textContent = element;
   sizes.appendChild(label);

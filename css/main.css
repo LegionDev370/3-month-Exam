@@ -1,6 +1,11 @@
 .input-sizes {
   display: none;
 }
+.active-checked{
+  background-color: rgb(109, 122, 234);
+  border: none !important;
+  color: #fff !important;
+}
 .wrapper{
   margin-top: 35px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
